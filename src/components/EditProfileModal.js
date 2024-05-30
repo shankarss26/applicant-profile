@@ -71,8 +71,8 @@ const EditProfileModal = ({ avatar, skills, setSkills, closeModal, show }) => {
   }
 
   return (
-    <div className={`modal ${show ? 'show' : ''}`} onClick={closeModal}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div className={`modal ${show ? 'show' : ''}`} >
+      <div className="modal-content">
         <div className="modal-header">
           <span className="close" onClick={closeModal}>&times;</span>
         </div>
